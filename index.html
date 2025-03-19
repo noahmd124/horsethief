@@ -3,8 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Horse Thief Island</title>
+    <title>Banner</title>
     <style>
+        @font-face {
+            font-family: 'Bernoru Semi Condensed';
+            src: url('bernoru.ttf') format('truetype');
+        }
+
         .banner {
             width: 100%;
             height: 300px;
@@ -13,17 +18,23 @@
             background-position: center;
             display: flex;
             align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 2em;
-            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+            justify-content: flex-end; /* Aligns text to the right */
+            padding-right: 50px;
+        }
+
+        .banner-text {
+            font-family: 'Bernoru Semi Condensed', sans-serif;
+            font-size: 3em;
+            font-weight: bold;
+            color: black;
+            text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.5);
         }
     </style>
 </head>
 <body>
 
     <div class="banner">
-        
+        <div class="banner-text">Welcome to Horse Thief Island</div>
     </div>
 
 </body>
